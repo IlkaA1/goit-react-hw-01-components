@@ -1,0 +1,11 @@
+.transactionHistory {
+  margin-top: 30px;
+  padding: 20px;
+  width: 400px;
+  background: rgb(180, 173, 173);
+  border: 2px solid rgb(156, 156, 240);
+}
+
+.td {
+  text-align: center;
+}
