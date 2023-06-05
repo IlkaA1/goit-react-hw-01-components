@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './statistics.module.css';
+import css from './OneIndication.module.css';
 
 const OneIndication = ({ id, label, percentage }) => (
   <li className={css.item}>

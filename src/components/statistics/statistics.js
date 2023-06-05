@@ -1,10 +1,10 @@
-import OneIndication from './oneIndication';
+import OneIndication from '../OneStatistic/OneIndication';
 import PropTypes from 'prop-types';
 import css from './statistics.module.css';
 
 const Statistics = ({ title, stats }) => (
   <section className={css.statistics}>
-    <h2 className="title">{title}</h2>
+    {title ? <h2 className="title">{title}</h2> : null}
 
     <ul className={css.statList}>
       {stats.map(stat => (
@@ -15,7 +15,7 @@ const Statistics = ({ title, stats }) => (
 );
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.array.isRequired,
 };
 
